@@ -6,7 +6,7 @@ const letsPlayEven = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  
+
   const theRandomNumber = Math.ceil(Math.random() * 33);
   console.log(`Question: ${theRandomNumber}`);
 
