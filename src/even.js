@@ -8,16 +8,17 @@ const letsPlayEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   const askUser = () => {
-    const theRandomNumber = Math.ceil(Math.random() * 33);
-    const currentAnswer = theRandomNumber % 2 === 0 ? 'yes' : 'no';
-
-    console.log(`Question: ${theRandomNumber}`);
-    const userAnswer = readlineSync.question('Your answer: ');
     for (let i = 0; i < 3; i += 1) {
+      const theRandomNumber = Math.ceil(Math.random() * 33);
+      const currentAnswer = theRandomNumber % 2 === 0 ? 'yes' : 'no';
+
+      console.log(`Question: ${theRandomNumber}`);
+      const userAnswer = readlineSync.question('Your answer: ');
       if (currentAnswer === userAnswer) {
         console.log('Correct');
       } else if (currentAnswer !== userAnswer) {
         console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${currentAnswer}. Let's try again, ${userName}`);
+        break;
       }
       console.log(`Congratulations, ${userName}!`);
     }
