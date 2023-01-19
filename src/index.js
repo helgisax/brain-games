@@ -17,8 +17,8 @@ const sample = (displayRules, giveQuestAndAns) => {
         console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${questAndAns[1]}. Let's try again, ${userName}`);
         break;
       }
-      console.log(`Congratulations, ${userName}!`);
     }
+    console.log(`Congratulations, ${userName}!`);
   };
   checkTheGame();
 };
