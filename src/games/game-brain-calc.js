@@ -21,13 +21,18 @@ const letsPlayCalc = () => {
     return result;
   };
 
-  const theRandomNumber = Math.ceil(Math.random() * 33);
-  const operaions = ['+', '-', '*'];
-  const theRandomOperator = Math.ceil(Math.random() * operaions.length);
+  const getRandomOperator = (arr) => {
+    const index = Math.ceil(Math.random() * arr.length);
+    return arr[index];
+  };
+
+  const getRandomNumber = () => Math.ceil(Math.random() * 33);
 
   const giveQuestAndAns = () => {
-    const a = theRandomNumber;
-    const b = theRandomNumber;
+    const operaions = ['+', '-', '*'];
+    const theRandomOperator = getRandomOperator(operaions);
+    const a = getRandomNumber();
+    const b = getRandomNumber();
     const currentOperator = theRandomOperator;
     const question = `${a} ${currentOperator} ${b}`;
     const answer = calculator(a, b, currentOperator);
