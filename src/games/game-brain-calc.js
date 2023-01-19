@@ -22,7 +22,7 @@ const letsPlayCalc = () => {
   };
 
   const getRandomOperator = (arr) => {
-    const index = Math.ceil(Math.random() * arr.length);
+    const index = Math.ceil(Math.random() * arr.length - 1);
     return arr[index];
   };
 
