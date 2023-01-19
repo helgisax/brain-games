@@ -15,7 +15,7 @@ const sample = (displayRules, giveQuestAndAns) => {
         console.log('Correct');
       } else if (questAndAns[1] !== userAnswer) {
         console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${questAndAns[1]}. Let's try again, ${userName}`);
-        break;
+        return;
       }
     }
     console.log(`Congratulations, ${userName}!`);
