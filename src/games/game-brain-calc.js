@@ -5,16 +5,20 @@ const letsPlayCalc = () => {
     console.log('What is the result of the expression?');
   };
   const calculator = (num1, num2, operator) => {
+    let result;
     switch (operator) {
       case '+':
-        return num1 + num2;
-      case '-':
-        return num1 - num2;
-      case '*':
-        return num1 * num2;
-      default:
+        result = num1 + num2;
         break;
+      case '-':
+        result = num1 - num2;
+        break;
+      case '*':
+        result = num1 * num2;
+        break;
+      default: break;
     }
+    return result;
   };
 
   const theRandomNumber = Math.ceil(Math.random() * 33);
