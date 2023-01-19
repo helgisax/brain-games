@@ -18,7 +18,7 @@ const letsPlayEven = () => {
         console.log('Correct');
       } else if (currentAnswer !== userAnswer) {
         console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${currentAnswer}. Let's try again, ${userName}`);
-        break;
+        return;
       }
       console.log(`Congratulations, ${userName}!`);
     }
