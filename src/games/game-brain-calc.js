@@ -35,7 +35,7 @@ const letsPlayCalc = () => {
     const b = getRandomNumber();
     const currentOperator = theRandomOperator;
     const question = `${a} ${currentOperator} ${b}`;
-    const answer = calculator(a, b, currentOperator);
+    const answer = calculator(a, b, currentOperator).toString();
     return [
       question,
       answer,
