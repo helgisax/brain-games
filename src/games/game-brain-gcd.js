@@ -5,7 +5,7 @@ const letsPlayGcd = () => {
     console.log('Find the greatest common divisor of given numbers');
   };
 
-  const calculator = (num1, num2) => {
+  /*const calculator = (num1, num2) => {
     if (num1 === num2) {
       return num1;
     } if (num1 > num2) {
@@ -14,6 +14,14 @@ const letsPlayGcd = () => {
       num2 = temp;
     }
     return calculator(num1, num2 - num1);
+  };*/
+  const calculator = (num1, num2) => {
+    for (let i = num1; i > 0; i -= 1) {
+      if (num1 % i === 0 && num2 % i === 0) {
+        return i;
+      }
+    }
+    return undefined;
   };
 
   const getRandomNumber = () => Math.ceil(Math.random() * 33);
