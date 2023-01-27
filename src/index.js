@@ -11,10 +11,10 @@ const sample = (displayRules, giveQuestAndAns) => {
       const questAndAns = giveQuestAndAns();
       console.log(`Question: ${questAndAns[0]}`);
       const userAnswer = readlineSync.question('Your answer: ');
-      if (questAndAns[1].toString() === userAnswer) {
+      if (questAndAns[1] === userAnswer) {
         console.log('Correct');
-      } else if (questAndAns[1].toString() !== userAnswer) {
-        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${questAndAns[1].toString()}.\nLet's try again, ${userName}!`);
+      } else if (questAndAns[1] !== userAnswer) {
+        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${questAndAns[1]}.\nLet's try again, ${userName}!`);
         return;
       }
     }
