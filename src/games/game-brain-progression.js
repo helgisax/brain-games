@@ -26,7 +26,7 @@ const letsPlayProgression = () => {
     actualProgression[hiddenNumber] = '..';
 
     const question = actualProgression.join(' ');
-    const answer = hiddenAnswer;
+    const answer = hiddenAnswer.toString();
     return [
       question,
       answer,
