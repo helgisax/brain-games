@@ -4,4 +4,3 @@ export const getRandomOperator = (arr) => {
 };
 
 export const getRandomNumber = (num) => Math.ceil(Math.random() * num);
-
