@@ -22,7 +22,7 @@ const letsPlayPrime = () => {
     const answer = calculator(actualNum) === false ? 'no' : 'yes';
     return [
       question,
-      answer,
+      answer.toString(),
     ];
   };
   sample(displayRules, giveQuestAndAns);
