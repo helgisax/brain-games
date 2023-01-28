@@ -1,4 +1,5 @@
 import sample from '../index.js';
+import { getRandomNumber } from '../instruments/instruments.js';
 
 const letsPlayGcd = () => {
   const displayRules = () => {
@@ -14,11 +15,9 @@ const letsPlayGcd = () => {
     return undefined;
   };
 
-  const getRandomNumber = () => Math.ceil(Math.random() * 33);
-
   const giveQuestAndAns = () => {
-    const a = getRandomNumber();
-    const b = getRandomNumber();
+    const a = getRandomNumber(33);
+    const b = getRandomNumber(33);
     const question = `${a} ${b}`;
     const answer = calculator(a, b).toString();
     return [
