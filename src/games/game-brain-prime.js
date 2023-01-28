@@ -1,4 +1,5 @@
 import sample from '../index.js';
+import { getRandomNumber } from '../instruments/instruments.js';
 
 const letsPlayPrime = () => {
   const displayRules = () => {
@@ -14,10 +15,8 @@ const letsPlayPrime = () => {
     return true;
   };
 
-  const getRandomNumber = () => Math.ceil(Math.random() * 33);
-
   const giveQuestAndAns = () => {
-    const actualNum = getRandomNumber();
+    const actualNum = getRandomNumber(33);
 
     const question = actualNum;
     const answer = calculator(actualNum) === false ? 'no' : 'yes';
