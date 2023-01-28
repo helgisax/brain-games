@@ -1,4 +1,5 @@
 import sample from '../index.js';
+import { getRandomNumber } from '../instruments/instruments.js';
 
 const letsPlayProgression = () => {
   const displayRules = () => {
@@ -12,8 +13,6 @@ const letsPlayProgression = () => {
     }
     return result;
   };
-
-  const getRandomNumber = (num) => Math.ceil(Math.random() * num);
 
   const giveQuestAndAns = () => {
     const actualBegin = getRandomNumber(33);
