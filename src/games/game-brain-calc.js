@@ -1,7 +1,7 @@
 import sample from '../index.js';
 import { getRandomNumber, getRandomOperator } from '../instruments/instruments.js';
 
-const letsPlayCalc = () => {
+const playCalcGame = () => {
   const displayRules = () => {
     console.log('What is the result of the expression?');
   };
@@ -38,4 +38,4 @@ const letsPlayCalc = () => {
   };
   sample(displayRules, giveQuestAndAns);
 };
-export default letsPlayCalc;
+export default playCalcGame;
