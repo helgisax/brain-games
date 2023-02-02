@@ -1,10 +1,8 @@
-import sample from '../index.js';
+import getGameEngine from '../index.js';
 import { getRandomNumber, getRandomOperator } from '../instruments/instruments.js';
 
 const playCalcGame = () => {
-  const displayRules = () => {
-    console.log('What is the result of the expression?');
-  };
+  const rules = 'What is the result of the expression?';
 
   const calculator = (num1, num2, operator) => {
     let result;
@@ -36,6 +34,6 @@ const playCalcGame = () => {
       answer,
     ];
   };
-  sample(displayRules, giveQuestAndAns);
+  getGameEngine(rules, giveQuestAndAns);
 };
 export default playCalcGame;
