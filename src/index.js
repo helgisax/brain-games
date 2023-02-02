@@ -14,13 +14,14 @@ const getGameEngine = (rules, buildRoundData) => {
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (questAndAns[1] === userAnswer) {
-      console.log('Correct');
-    } else if (answer !== userAnswer) {
+    if (answer !== userAnswer) {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${userName}!`);
       return;
+    } if (answer === userAnswer) {
+      console.log('Correct');
     }
+    console.log(`Congratulations, ${userName}!`);
   }
-  console.log(`Congratulations, ${userName}!`);
 };
+
 export default getGameEngine;
