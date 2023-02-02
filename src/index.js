@@ -7,10 +7,8 @@ const getGameEngine = (rules, buildRoundData) => {
   console.log(rules);
 
   const numberOfRounds = 3;
-
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const questAndAns = buildRoundData();
-    const [question, answer] = questAndAns;
+    const [question, answer] = buildRoundData();
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -20,8 +18,8 @@ const getGameEngine = (rules, buildRoundData) => {
     } if (answer === userAnswer) {
       console.log('Correct');
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default getGameEngine;
