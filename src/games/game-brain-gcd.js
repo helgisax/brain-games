@@ -1,10 +1,8 @@
-import sample from '../index.js';
+import getGameEngine from '../index.js';
 import { getRandomNumber } from '../instruments/instruments.js';
 
-const letsPlayGcd = () => {
-  const displayRules = () => {
-    console.log('Find the greatest common divisor of given numbers');
-  };
+const PlayGcdGame = () => {
+  const rules = 'Find the greatest common divisor of given numbers';
 
   const calculator = (num1, num2) => {
     for (let i = num1; i > 0; i -= 1) {
@@ -25,6 +23,6 @@ const letsPlayGcd = () => {
       answer,
     ];
   };
-  sample(displayRules, giveQuestAndAns);
+  getGameEngine(rules, giveQuestAndAns);
 };
-export default letsPlayGcd;
+export default PlayGcdGame;
