@@ -1,10 +1,8 @@
-import sample from '../index.js';
+import getGameEngine from '../index.js';
 import { getRandomNumber } from '../instruments/instruments.js';
 
-const letsPlayProgression = () => {
-  const displayRules = () => {
-    console.log('What number is missing in the progression?');
-  };
+const playProgressionGame = () => {
+  const rules = 'What number is missing in the progression?';
 
   const calculator = (begin, step, length) => {
     const result = [begin];
@@ -31,6 +29,6 @@ const letsPlayProgression = () => {
       answer,
     ];
   };
-  sample(displayRules, giveQuestAndAns);
+  getGameEngine(rules, giveQuestAndAns);
 };
-export default letsPlayProgression;
+export default playProgressionGame;
