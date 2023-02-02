@@ -1,10 +1,8 @@
-import sample from '../index.js';
+import getGameEngine from '../index.js';
 import { getRandomNumber } from '../instruments/instruments.js';
 
-const letsPlayPrime = () => {
-  const displayRules = () => {
-    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  };
+const playPrimeGame = () => {
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const calculator = (num) => {
     for (let i = 2; i < num; i += 1) {
@@ -25,6 +23,6 @@ const letsPlayPrime = () => {
       answer.toString(),
     ];
   };
-  sample(displayRules, giveQuestAndAns);
+  getGameEngine(rules, giveQuestAndAns);
 };
-export default letsPlayPrime;
+export default playPrimeGame;
