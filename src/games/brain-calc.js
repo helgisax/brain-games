@@ -12,7 +12,7 @@ const getCalculations = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      break; // throw new Error(`Unknown operation: '${operator}'`);
+      throw new Error(`Unknown operation: '${operator}'`);
   }
 };
 
