@@ -15,7 +15,7 @@ const buildRoundData = () => {
   const begin = getRandomNumber(1, 33);
   const step = getRandomNumber(1, 5);
   const length = getRandomNumber(5, 10);
-  const hiddenNumber = getRandomNumber(1, length);
+  const hiddenNumber = getRandomNumber(1, length - 1);
 
   const progression = getCalculations(begin, step, length);
   const hiddenAnswer = progression[hiddenNumber];
