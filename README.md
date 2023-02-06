@@ -22,7 +22,7 @@ brain-even
 ```
 If the number is even - you need to answer "yes", otherwise - "no".
 
-[![asciicast](https://asciinema.org/a/OZCHMlhHTtO7TNHt897d3S9ro)
+[![asciicast](https://asciinema.org/a/OZCHMlhHTtO7TNHt897d3S9ro.svg)](https://asciinema.org/a/OZCHMlhHTtO7TNHt897d3S9ro)
 
 
 ### brain-сalc
