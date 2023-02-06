@@ -32,7 +32,7 @@ brain-calc
 ```
 You need to solve one of the random examples of multiplication, addition or subtraction.
 
-[![asciicast](https://asciinema.org/a/KgA8BjV81wwUVX3V83rki4bav)
+[![asciicast](https://asciinema.org/a/KgA8BjV81wwUVX3V83rki4bav.svg)](https://asciinema.org/a/KgA8BjV81wwUVX3V83rki4bav)
 
 ### brain-gcd
 launch:
@@ -41,7 +41,7 @@ brain-gcd
 ```
 You need to find the greatest common divisor of two numbers.
 
-[![asciicast](https://asciinema.org/a/k7NLCKA9Y0soak1ND06jH0uV4)
+[![asciicast](https://asciinema.org/a/k7NLCKA9Y0soak1ND06jH0uV4.svg)](https://asciinema.org/a/k7NLCKA9Y0soak1ND06jH0uV4)
 
 ### brain-prime
 launch:
@@ -50,7 +50,7 @@ brain-prime
 ```
 If the number is prime - you need to answer "yes", otherwise - "no".
 
-[![asciicast]()
+[![asciicast](https://asciinema.org/a/nfpR8QljzzHIeqiFwoRv7ZGsK.svg)](https://asciinema.org/a/nfpR8QljzzHIeqiFwoRv7ZGsK)
 
 ### brain-progression
 launch:
@@ -59,4 +59,4 @@ brain-progression
 ```
 You need to enter the missing number in the progression.
 
-[![asciicast]()
+[![asciicast](https://asciinema.org/a/IAUn2osRc3hqXadnU5PRjSVag.svg)](https://asciinema.org/a/IAUn2osRc3hqXadnU5PRjSVag)
