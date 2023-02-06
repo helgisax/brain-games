@@ -23,7 +23,7 @@ const buildRoundData = () => {
   const secondNum = getRandomNumber(1, 33);
   const randomOperator = operations[randomIndex];
   const question = `${firstNum} ${randomOperator} ${secondNum}`;
-  const answer = getCalculations(firstNum, secondNum, randomOperator).toString();
+  const answer = getCalculations(firstNum, secondNum, randomOperator);
   return [
     question,
     answer,
