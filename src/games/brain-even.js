@@ -5,7 +5,12 @@ const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const buildRoundData = () => {
   const randomNumber = getRandomNumber(1, 33);
-  const currentAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
+  const isEven = (num) => {
+    if (num % 2 === 0) {
+      return true;
+    } return false;
+  };
+  const currentAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [
     randomNumber,
     currentAnswer,
