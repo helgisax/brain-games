@@ -23,7 +23,7 @@ const buildRoundData = () => {
   ];
 };
 
-const PlayGcdGame = () => {
+const playGcdGame = () => {
   getGameEngine(rules, buildRoundData);
 };
-export default PlayGcdGame;
+export default playGcdGame;
