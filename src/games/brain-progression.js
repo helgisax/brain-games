@@ -1,9 +1,9 @@
 import getGameEngine from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const rules = 'What number is missing in the progression?';
+const task = 'What number is missing in the progression?';
 
-const getCalculations = (begin, step, length) => {
+const buildProgression = (begin, step, length) => {
   const result = [begin];
   for (let i = 1; i < length; i += 1) {
     result.push(result[i - 1] + step);
@@ -15,9 +15,10 @@ const buildRoundData = () => {
   const begin = getRandomNumber(1, 33);
   const step = getRandomNumber(1, 5);
   const length = getRandomNumber(5, 10);
-  const hiddenNumber = getRandomNumber(1, length - 1);
 
-  const progression = getCalculations(begin, step, length);
+  const progression = buildProgression(begin, step, length);
+  const hiddenNumber = getRandomNumber(1, progression.length - 1);
+
   const hiddenAnswer = progression[hiddenNumber];
   progression[hiddenNumber] = '..';
 
@@ -30,6 +31,6 @@ const buildRoundData = () => {
 };
 
 const playProgressionGame = () => {
-  getGameEngine(rules, buildRoundData);
+  getGameEngine(task, buildRoundData);
 };
 export default playProgressionGame;
