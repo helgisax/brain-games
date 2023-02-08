@@ -1,15 +1,17 @@
 import getGameEngine from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const rules = 'Find the greatest common divisor of given numbers';
+const task = 'Find the greatest common divisor of given numbers';
+
+const minNum = (num1, num2) => (num1 > num2 ? num2 : num1);
 
 const getCalculations = (num1, num2) => {
-  for (let i = num1; i > 0; i -= 1) {
+  for (let i = minNum(num1, num2); i > 0; i -= 1) {
     if (num1 % i === 0 && num2 % i === 0) {
       return i;
     }
   }
-  return undefined;
+  return 1;
 };
 
 const buildRoundData = () => {
@@ -24,6 +26,6 @@ const buildRoundData = () => {
 };
 
 const playGcdGame = () => {
-  getGameEngine(rules, buildRoundData);
+  getGameEngine(task, buildRoundData);
 };
 export default playGcdGame;
