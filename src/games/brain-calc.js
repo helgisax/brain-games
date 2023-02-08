@@ -1,7 +1,7 @@
 import getGameEngine from '../index.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const rules = 'What is the result of the expression?';
+const task = 'What is the result of the expression?';
 
 const getCalculations = (num1, num2, operator) => {
   switch (operator) {
@@ -17,13 +17,18 @@ const getCalculations = (num1, num2, operator) => {
 };
 
 const operations = ['+', '-', '*'];
+
 const buildRoundData = () => {
-  const randomIndex = getRandomNumber(0, 2);
+  const randomIndex = getRandomNumber(0, operations.length - 1);
   const firstNum = getRandomNumber(1, 33);
   const secondNum = getRandomNumber(1, 33);
+
   const randomOperator = operations[randomIndex];
+
   const question = `${firstNum} ${randomOperator} ${secondNum}`;
+
   const answer = getCalculations(firstNum, secondNum, randomOperator).toString();
+
   return [
     question,
     answer,
@@ -31,6 +36,6 @@ const buildRoundData = () => {
 };
 
 const playCalcGame = () => {
-  getGameEngine(rules, buildRoundData);
+  getGameEngine(task, buildRoundData);
 };
 export default playCalcGame;
