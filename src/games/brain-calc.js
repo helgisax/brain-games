@@ -20,8 +20,8 @@ const operations = ['+', '-', '*'];
 
 const buildRoundData = () => {
   const randomIndex = getRandomNumber(0, operations.length - 1);
-  const firstNum = getRandomNumber(1, 33);
-  const secondNum = getRandomNumber(1, 33);
+  const firstNum = getRandomNumber(33);
+  const secondNum = getRandomNumber(33);
 
   const randomOperator = operations[randomIndex];
 
