@@ -17,7 +17,7 @@ const isPrimeNummber = (num) => {
 };
 
 const buildRoundData = () => {
-  const actualNum = getRandomNumber(2, 33);
+  const actualNum = getRandomNumber(2);
 
   const answer = isPrimeNummber(actualNum) ? 'yes' : 'no';
   return [
