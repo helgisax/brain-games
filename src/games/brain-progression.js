@@ -12,8 +12,8 @@ const buildProgression = (begin, step, length) => {
 };
 
 const buildRoundData = () => {
-  const begin = getRandomNumber(33);
-  const step = getRandomNumber(5);
+  const begin = getRandomNumber();
+  const step = getRandomNumber(1, 5);
   const length = getRandomNumber(5, 10);
 
   const progression = buildProgression(begin, step, length);
