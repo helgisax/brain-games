@@ -13,7 +13,7 @@ const getGcd = (num1, num2) => {
 };
 
 const buildRoundData = () => {
-  const firstNum = getRandomNumber(33);
+  const firstNum = getRandomNumber();
   const secondNum = getRandomNumber(33, 66);
   const question = `${firstNum} ${secondNum}`;
   const answer = getGcd(firstNum, secondNum).toString();
