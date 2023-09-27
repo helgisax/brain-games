@@ -9,7 +9,7 @@ This project contains five console mini-games, each of which lasts three rounds.
 ## Setup
 
 ```bash
-copy repository: git@github.com:helgisax/frontend-project-44.git
+copy repository: git@github.com:helgisax/brain-games.git
 in project root folder: make install
 ```
 
